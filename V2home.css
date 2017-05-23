@@ -137,7 +137,7 @@ nav ul li {
 {
   position: absolute;
   z-index: 97;
-  background-color: #373d3f;
+  background-color: #13658e;
   width: 100%;
   height: 30%;
   margin-top: 40%;
@@ -147,10 +147,20 @@ nav ul li {
 {
   position: absolute;
   z-index: 98;
-  background-color: #373d3f;
+  background-color: #13658e;
   width: 100%;
   height: 30%;
   margin-top: 120%;
+}
+
+.divider3
+{
+  position: absolute;
+  z-index: 100;
+  background-color: #13658e;
+  width: 100%;
+  height: 30%;
+  margin-top: 210%;
 }
 
 .sec2Title
@@ -158,7 +168,7 @@ nav ul li {
   position: absolute;
   z-index: 97;
   margin-top: 55%;
-  margin-left: 55%;
+  margin-left: 58%;
   color: white;
   font-size: 40px;
   letter-spacing: -3px;
@@ -184,12 +194,12 @@ nav ul li {
 .sec2Para
 {
   position: absolute;
-  width: 20%;
+  width: 35%;
   z-index: 97;
   margin-top: 65%;
   margin-left: 58%;
-  color: white;
-  font-size: 1em;
+  color: #efefef;
+  font-size: 0.93em;
   text-align: justify;
 }
 
@@ -212,7 +222,7 @@ nav ul li {
 {
   position: absolute;
   z-index: 97;
-  margin-left: 65%;
+  margin-left: 62%;
   margin-top: 97%;
   margin-bottom: 5%;
   width: 30%;
@@ -275,7 +285,7 @@ nav ul li {
   z-index: 97;
   margin-top: 113.75%;
   margin-left: 55%;
-  margin-left: 76%;
+  margin-left: 73%;
   color: white;
 }
 
@@ -426,4 +436,48 @@ video
   text-align: justify;
   font-size: 0.93em;
   color: #373d3f;
+}
+
+
+.section4Container
+{
+  position: absolute;
+  z-index: 98;
+  margin-top: 220%;
+  width: 100%;
+  height: 150%;
+  background-image: url(images/chalkboardBG.jpg);
+}
+
+.section4TitleContainer
+{
+  display: flex;
+  position: absolute;
+  z-index: 99;
+  margin-top: 6%;
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+}
+
+.section4TitleGraphic
+{
+  height: 100%;
+  width: 50%;
+  margin: auto;
+}
+
+.section4TitleGraphic img
+{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.section4GridContainer
+{
+  position: absolute;
+  z-index: 98;
+  margin-top: 240%;
+  width: 100%;
+  height: 110%;
 }
