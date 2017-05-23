@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cale Teale</title>
+    <link rel="stylesheet" type="text/css" media="(min-device-width: 668px) and (orientation: landscape)" href="V2home.css" />
+    <link rel="stylesheet" type="text/css" media="(max-device-width: 667px)" href="mobileHome.css" />
+    <link href="https://fonts.googleapis.com/css?family=Khula:300,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="icon" href="images/artsignature3.png" type="image/gif" sizes="16x16">
+
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+  </head>
+  <body>
+
+    <script>document.body.className += ' fade-out';</script>
+
+    <script>
+      $(function() {
+      $('body').removeClass('fade-out');
+      });
+    </script>
+
+      <div id="top">
+      </div>
+
+      <div class="signatureLogo">
+        <img src="images/artsignature3.png">
+      </div>
+
+      <nav class="stroke" id="nav">
+        <ul>
+          <a class="link-3" href="#photoHome"><li>Photography</li></a>
+          <a class="link-3" href="#section3scroll"><li>Video Editing</li></a>
+          <a class="link-3" href="eduHome.html"><li>Education / Previous Work</li></a>
+          <a class="link-3" href="graphicHome.html"><li>Graphic Design</li></a>
+        </ul>
+      </nav>
+
+        <div class="punchTitle">
+          <h1>Ambitious. Passionate. Creator.</h1>
+        </div>
+
+        <div class="punchPara">
+          Lorem ipsum dolor sit amet, per nusquam intellegebat eu, falli consectetuer eu sea, ut quo fastidii propriae. Qui no falli vivendum intellegebat, pro idque ceteros pertinax no, sea at nominati voluptatum. Modo reque quo an, repudiare sententiae liberavisse an has. Et mentitum consequat sit, sit id consulatu adversarium definitiones.
+        </div>
+
+        <div id="returner">
+          <a href="#top"><img src="images/backtotop.png"></a>
+        </div>
+
+        <script>
+        $(function(){
+          $(window).scroll(function() {
+            $(document).scrollTop() > 100 ? $('#returner:hidden').fadeIn() : $('#returner:visible').fadeOut();
+          });
+        })
+        </script>
+
+        <div class="divider">
+        </div>
+
+      <div class="bgIMG">
+        <img src="images/caledockedit.jpeg"/>
+      </div>
+
+      <div class="section2">
+        <a name="photoHome" id="photoHome"></a>
+      </div>
+
+        <div class="sec2Title">
+          <h1>Photography</h1>
+        </div>
+
+        <div class="sec2Para">
+          Lorem ipsum dolor sit amet, per nusquam intellegebat eu, falli consectetuer eu sea, ut quo fastidii propriae. Qui no falli vivendum intellegebat, pro idque ceteros pertinax no, sea at nominati voluptatum. Modo reque quo an, repudiare sententiae liberavisse an has. Et mentitum consequat sit, sit id consulatu adversarium definitiones.
+        </br></br>
+          Lorem ipsum dolor sit amet, per nusquam intellegebat eu, falli consectetuer eu sea, ut quo fastidii propriae. Qui no falli vivendum intellegebat, pro idque ceteros pertinax no, sea at nominati voluptatum. Modo reque quo an, repudiare sententiae liberavisse an has. Et mentitum consequat sit, sit id consulatu adversarium definitiones.
+        </br></br>
+          Lorem ipsum dolor sit amet, per nusquam intellegebat eu, falli consectetuer eu sea, ut quo fastidii propriae. Qui no falli vivendum intellegebat, pro idque ceteros pertinax no, sea at nominati voluptatum. Modo reque quo an, repudiare sententiae liberavisse an has. Et mentitum consequat sit, sit id consulatu adversarium definitiones.
+        </div>
+
+          <div class="photoContainer">
+            <div class="fade Slides">
+              <img class="slides" src="images/r1200rsdock.jpg">
+            </div>
+            <div class="fade Slides">
+              <img class="slides" src="images/r1200rsdockedit.jpeg">
+            </div>
+            <div class="fade Slides">
+              <img class="slides" src="images/hunter1.jpg">
+            </div>
+            <div class="fade Slides">
+              <img class="slides" src="images/minilightbars1.jpg">
+            </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("Slides");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              slides[slideIndex-1].style.display = "block";
+            }
+          </script>
+
+          <div class="slideshowCaption">
+            <h3>Some of my work</h3>
+          </div>
+
+
+      <div class="bgIMG2">
+        <img src="images/lowlightRB1.jpg"/>
+      </div>
+
+      <div class="divider2">
+      </div>
+
+      <div class="video">
+        <video autoplay loop>
+          <source src="videos/websitevideodemoreel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="section3">
+      </div>
+
+      <div id="section3scroll">
+      </div>
+
+      <div class="sec3BG">
+        <div class="sec3Title">
+          <h1>VIDEO EDITING</h1>
+        </div>
+      </div>
+
+
+
+  </body>
+</html>

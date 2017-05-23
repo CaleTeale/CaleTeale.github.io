@@ -1,0 +1,73 @@
+html
+{
+  margin: 0;
+  padding: 0;
+  background-color: #ededed;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  transition: 1s opacity;
+  font-family: 'Khula', sans-serif;
+
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+.signatureLogo
+{
+  top: 40%;
+  position: absolute;
+  display: inline-block;
+  z-index: 100;
+  width: 150px;
+  height: 150px;
+  margin-left: 45.3%;
+  margin-right: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.signatureLogo img
+{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.signatureLogo:hover
+{
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  transform: scale(1.2, 1.2);
+}
+
+.popOut
+{
+  display: none;
+  top: 60%;
+  width: 10%;
+  position:absolute;
+  margin-left: 44%;
+  margin-right: 50%;
+  text-align: center;
+}
+
+@keyframes pulse_animation {
+	0% { transform: scale(1, 1); }
+	25% { transform: scale(1.05, 1.05); }
+	50% { transform: scale(1, 1); }
+  75% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+.pulse {
+	animation-name: pulse_animation;
+	animation-duration: 2500ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}

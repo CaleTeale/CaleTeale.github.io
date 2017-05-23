@@ -1,0 +1,98 @@
+html
+{
+    margin: 0;
+    padding: 0;
+    background-color: #107896;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Khula', sans-serif;
+}
+
+nav {
+  width: 80%;
+  margin: 3% auto 0;
+  background: #ffffff;
+  padding: 50px 0;
+  box-shadow: 0px 5px 0px #bcbcbc;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+
+/*HOVER EFFECT*/
+.link-3 {
+  transition: 0.4s;
+  color: #093145;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link-3:hover {
+  background-color: #093145;
+  color: #ffffff;
+  padding: 24px 10px;
+}
+
+/**/
+
+.mainBody
+{
+  margin-top: 3%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+button.accordion {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #f2f3f4;
+  box-shadow: 0px 5px 0px #bcbcbc;
+  color: black;
+  cursor: pointer;
+  padding: 24px;
+  width: 80%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+button h1
+{
+  color: #373D3F;
+}
+
+button.accordion:after {
+    content: '\02C5'; /*unicode*/
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    transition: 0.4s;
+}
+
+button.accordion.active:after {
+    content: "\02C4"; /*unicode*/
+}
+
+div.infoPanel {
+  padding: 5px 18px;
+  margin-top: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 77%;
+  color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  text-align: justify;
+  transition: max-height 0.8s ease;
+}

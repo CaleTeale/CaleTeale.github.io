@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cale Teale</title>
+    <link rel="stylesheet" type="text/css" media="(min-device-width: 668px) and (orientation: landscape)" href="index.css" />
+    <link rel="stylesheet" type="text/css" media="(max-device-width: 667px)" href="mobileHome.css" />
+    <link href="https://fonts.googleapis.com/css?family=Khula:300,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="icon" href="images/artsignature3.png" type="image/gif" sizes="16x16">
+
+  </head>
+  <body>
+    <script>document.body.className += ' fade-out';</script>
+    <script>
+      $(function() {
+      $('body').removeClass('fade-out');
+      });
+    </script>
+
+    <script>
+    $(function() {
+    $(".popOut").delay(5000).fadeIn();
+    });
+    </script>
+
+      <div class="signatureLogo pulse">
+        <a href="mainHome.html"><img src="images/artsignature3.png"></a>
+      </div>
+
+      <div class="popOut">
+        Click the signature.
+      </div>
+
+  </body>
+</html>
