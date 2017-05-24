@@ -26,16 +26,35 @@ body.fade-out {
   left: 0;
 }
 
-.signatureLogo
+.signatureLogoContainer
 {
   top: 0;
   position: absolute;
   display: inline-block;
   z-index: 100;
-  width: 300px;
-  height: 150px;
-  margin-left: 45.3%;
-  margin-right: 50%;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  pointer-events:none;
+}
+
+.logoItem
+{
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+  width: 8%;
+  pointer-events:none;
+}
+
+.logoItem img
+{
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+	margin-right: auto;
+  pointer-events:none;
 }
 
 .signatureLogo img
