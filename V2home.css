@@ -78,7 +78,7 @@ nav ul li {
 }
 
 /*HOVER EFFECT*/
-.link-3 {
+.link {
   transition: 0.4s;
   color: #093145;
   font-size: 20px;
@@ -86,12 +86,21 @@ nav ul li {
   padding: 0 10px;
   margin: 0 10px;
 }
-.link-3:hover {
+.link:hover {
   background-color: #093145;
   color: #ffffff;
   padding: 24px 10px;
 }
 
+.linkNA {
+  transition: 0.4s;
+  color: lightgrey;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+  cursor: not-allowed;
+}
 /**/
 
 .mainBody
@@ -115,7 +124,7 @@ nav ul li {
   position: absolute;
   z-index: 97;
   width: 90%;
-  font-size: 24px;
+  font-size: 1.3vw;
   letter-spacing: -3px;
   text-align: right;
   justify-content: flex-end;
@@ -128,8 +137,7 @@ nav ul li {
   width: 20%;
   margin-left: 70%;
   margin-top: 7%;
-  font-size: 24px;
-  font-size: 1em;
+  font-size: 0.85vw;
   text-align: justify;
 }
 
@@ -139,7 +147,7 @@ nav ul li {
   z-index: 97;
   background-color: #afafaf;
   width: 100%;
-  height: 30%;
+  height: 200px;
   margin-top: 40%;
 }
 
@@ -149,7 +157,7 @@ nav ul li {
   z-index: 98;
   background-color: #afafaf;
   width: 100%;
-  height: 30%;
+  height: 200px;
   margin-top: 120%;
 }
 
@@ -159,8 +167,18 @@ nav ul li {
   z-index: 100;
   background-color: #afafaf;
   width: 100%;
-  height: 30%;
+  height: 200px;
   margin-top: 210%;
+}
+
+.divider4
+{
+  position: absolute;
+  z-index: 100;
+  background-color: #afafaf;
+  width: 100%;
+  height: 200px;
+  margin-top: 295%;
 }
 
 .sec2Title
@@ -170,7 +188,7 @@ nav ul li {
   margin-top: 55%;
   margin-left: 58%;
   color: white;
-  font-size: 40px;
+  font-size: 2vw;
   letter-spacing: -3px;
 }
 
@@ -191,6 +209,18 @@ nav ul li {
   max-height: 100%;
 }
 
+.returnToolTip
+{
+  position: absolute;
+  margin-left: 60px;
+  margin-top: -45px;
+  width: 100px;
+  color: #ffffff;
+  padding: 3px 3px 3px 3px;
+  text-shadow: 1px 1px black;
+  font-size: 0.8em;
+}
+
 .sec2Para
 {
   position: absolute;
@@ -199,7 +229,7 @@ nav ul li {
   margin-top: 65%;
   margin-left: 58%;
   color: #efefef;
-  font-size: 0.93em;
+  font-size: 0.8vw;
   text-align: justify;
 }
 
@@ -247,11 +277,11 @@ nav ul li {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -35%;
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 0.8vw;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
@@ -260,6 +290,11 @@ nav ul li {
 {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255,255,255,0.8);
+  color: black;
 }
 
 .fade {
@@ -287,6 +322,8 @@ nav ul li {
   margin-left: 55%;
   margin-left: 73%;
   color: white;
+  font-size: 0.9vw;
+
 }
 
 .video
@@ -434,7 +471,7 @@ video
   display: flex;
   justify-content: center;
   text-align: justify;
-  font-size: 0.93em;
+  font-size: 0.85vw;
   color: #373d3f;
 }
 
@@ -481,6 +518,8 @@ video
   margin-right: 10%;
   color: white;
   text-align: center;
+  font-size: 0.85vw;
+
 }
 
 .grid
@@ -529,4 +568,27 @@ video
 .grid-item--width3
 {
   width: 30%;
+}
+
+.section5Container
+{
+  position: absolute;
+  z-index: 98;
+  margin-top: 300%;
+  width: 100%;
+  height: 150%;
+  background-color: #efefef
+}
+
+.section5Title
+{
+  position: absolute;
+  z-index: 99;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: #093145;
+  font-size: 2vw;
+  letter-spacing: -3px;
 }
