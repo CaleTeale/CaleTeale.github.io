@@ -29,11 +29,11 @@
       });
     });
     </script>
-    <script src="/javascript/masonry.js/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
   </head>
   <body>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script>document.body.className += ' fade-out';</script>
-
     <script>
       $(function() {
       $('body').removeClass('fade-out');
@@ -197,9 +197,37 @@
             <img src="images/graphic-design-chalk.png">
           </div>
         </div>
+
+        <div class="section4Para">
+          Sed convallis, ipsum eu ornare laoreet, libero nibh semper mauris, et fermentum dui erat et magna. Morbi placerat quam ac diam pellentesque iaculis. Donec a dolor suscipit, consequat lacus sit amet, bibendum tortor. Cras posuere felis justo, quis interdum magna malesuada mollis. Ut vel odio quis dui tempus efficitur. Ut malesuada mauris elit, sit amet ullamcorper justo pharetra sit amet. Aliquam varius rhoncus diam, id gravida tellus eleifend ac.
+
+        </br></br>
+
+          Aenean volutpat nisi arcu, sed volutpat mauris pellentesque eget. Cras tincidunt sagittis varius. Cras egestas magna faucibus, vestibulum lacus ac, vulputate sapien. Nullam dapibus nunc in eros faucibus mattis. Nullam at nulla lorem. Quisque lobortis volutpat vulputate. Sed aliquam risus diam, ac dictum sem pellentesque a. Vivamus ornare nec diam at commodo. Nullam eget elementum magna. In vitae tincidunt eros, ac porta ipsum. Integer quis massa id velit vulputate suscipit. Duis enim tortor, porta id posuere vestibulum, aliquam sit amet urna. Ut malesuada, quam et sagittis placerat, tortor nunc elementum dui, a pretium mi turpis in lacus. Vivamus tempus, nisi non gravida laoreet, tellus dolor maximus risus, vitae aliquet arcu urna ac turpis. Sed id venenatis odio. Morbi malesuada dolor ante, vel bibendum ante aliquam vel.
+        </div>
       </div>
 
-      <div class="section4GridContainer">
-      </div>
+      <script>
+      var $container = jQuery('.grid');
+      // initialize
+      $('.grid').masonry({
+        columnWidth: 0,
+        itemSelector: '.grid-item'
+      });
+      </script>
+
+        <div class="grid">
+          <div class="grid-item"><img src="images/portfolio/2017 Playlist Icon.jpg"></div>
+          <div class="grid-item"><img src="images/portfolio/Vault Boy Collage 1440p with Waldo.png"></div>
+          <div class="grid-item"><img src="images/portfolio/neonsteam2017.jpg"></div>
+          <div class="grid-item grid-item--width2"><img src="images/portfolio/Geometric Mountain Art Wall Canvas 1.png"></div>
+          <div class="grid-item grid-item--width2"><img src="images/portfolio/AVT Logo - 2014.jpg"></div>
+          <div class="grid-item grid-item--width2"><img src="images/portfolio/CCC Film Festival V3.jpg"></div>
+          <div class="grid-item grid-item--width2"><img src="images/portfolio/DuskieMoto Profile Pic V1.png"></div>
+          <div class="grid-item grid-item--width2"><img src="images/portfolio/Keyboard Warrior.jpg"></div>
+          <div class="grid-item grid-item--width3"><img src="images/portfolio/Tesla Project - Night Vision.jpg"></div>
+          <div class="grid-item grid-item--width15"><img src="images/portfolio/Tangelo WiFi Services.jpg"></div>
+        </div>
+
   </body>
 </html>
