@@ -4,7 +4,7 @@
     <title>Cale Teale</title>
     <link rel="stylesheet" type="text/css" media="(min-device-width: 668px) and (orientation: landscape)" href="V2home.css" />
     <link rel="stylesheet" type="text/css" media="(max-device-width: 667px)" href="mobileHome.css" />
-    <link href="https://fonts.googleapis.com/css?family=Khula:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Work+Sans:400,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="icon" href="images/artsignature3.png" type="image/gif" sizes="16x16">
     <script>
@@ -32,14 +32,6 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
   </head>
   <body>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <script>document.body.className += ' fade-out';</script>
-    <script>
-      $(function() {
-      $('body').removeClass('fade-out');
-      });
-    </script>
-
       <div id="top">
       </div>
 
@@ -76,14 +68,6 @@
           </div>
         </div>
 
-        <script>
-        $(function(){
-          $(window).scroll(function() {
-            $(document).scrollTop() > 100 ? $('#returner:hidden').fadeIn() : $('#returner:visible').fadeOut();
-          });
-        })
-        </script>
-
         <div class="divider">
         </div>
 
@@ -96,7 +80,7 @@
         </div>
 
         <div class="sec2Para">
-          Ever since my first family holiday I have always had an interest in photography and certain techniques. Despite many years of taking photos, there is still much for me to learn, however, even through small sessions experimentating and testing different styles and subjects - I know I have an immense passion for the field of photography. My favourite technique (so far) is low light photography. Capturing the desired amount of light requires extreme patience, but the results a highly worthwhile and can exhibit many hidden meanings and stories.
+          Ever since my first family holiday I have always had an interest in photography and certain techniques. Despite many years of taking photos, there is still much for me to learn, however, even through small sessions experimentating and testing different styles and subjects - I know I have an immense passion for the field of photography. My favourite technique (so far) is low light photography. Capturing the desired amount of light requires extreme patience, but the results are highly worthwhile and can exhibit many hidden meanings and stories.
         </br></br>
           My second favourite style is long exposure shooting. The result of this technique is an amazing effect. Even taking a simple photo of a car driving by can create awesome trail effects.
         </br></br>
@@ -118,27 +102,6 @@
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
           </div>
-
-          <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("Slides");
-              if (n > slides.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";
-              }
-              slides[slideIndex-1].style.display = "block";
-            }
-          </script>
 
       <div class="bgIMG2">
         <img src="images/lowlightRB1.jpg"/>
@@ -208,14 +171,7 @@
         </div>
       </div>
 
-      <script>
-      var $container = jQuery('.grid');
-      // initialize
-      $('.grid').masonry({
-        columnWidth: 0,
-        itemSelector: '.grid-item'
-      });
-      </script>
+
 
         <div class="grid">
           <div class="grid-item"><img src="images/portfolio/2017 Playlist Icon.jpg"></div>
@@ -224,9 +180,9 @@
           <div class="grid-item grid-item--width2"><img src="images/portfolio/Geometric Mountain Art Wall Canvas 1.png"></div>
           <div class="grid-item grid-item--width2"><img src="images/portfolio/AVT Logo - 2014.jpg"></div>
           <div class="grid-item grid-item--width2"><img src="images/portfolio/CCC Film Festival V3.jpg"></div>
-          <div class="grid-item grid-item--width2"><img src="images/portfolio/DuskieMoto Profile Pic V1.png"></div>
-          <div class="grid-item grid-item--width2"><img src="images/portfolio/Keyboard Warrior.jpg"></div>
           <div class="grid-item grid-item--width3"><img src="images/portfolio/Tesla Project - Night Vision.jpg"></div>
+          <div class="grid-item grid-item--width2"><img src="images/portfolio/Keyboard Warrior.jpg"></div>
+          <div class="grid-item grid-item--width2"><img src="images/portfolio/DuskieMoto Profile Pic V1.png"></div>
           <div class="grid-item grid-item--width15"><img src="images/portfolio/Tangelo WiFi Services.jpg"></div>
         </div>
 
@@ -234,13 +190,74 @@
         </div>
 
       <div class="section5Container">
-        <!-- <div class="section5TitleContainer">
+        <div class="section5TitleContainer">
           <div class="section5Title" id="eduHome">
             <h1>Education and Previous Employment</h1>
           </div>
-        </div> -->
+        </div>
 
       </div>
 
+
+          <script>
+          $(function(){
+            $(window).scroll(function() {
+              $(document).scrollTop() > 100 ? $('#returner:hidden').fadeIn() : $('#returner:visible').fadeOut();
+            });
+          })
+          </script>
+
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("Slides");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              slides[slideIndex-1].style.display = "block";
+            }
+          </script>
+
+          <script>
+          var $container = jQuery('.grid');
+          // initialize
+          $('.grid').masonry({
+            columnWidth: 0,
+            itemSelector: '.grid-item'
+          });
+          </script>
+
+          <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+          <script>document.body.className += ' fade-out';</script>
+          <script>
+            $(function() {
+            $('body').removeClass('fade-out');
+            });
+          </script>
+
+          <script>
+            document.onreadystatechange = function () {
+              var state = document.readyState
+              if (state == 'interactive') {
+                   document.getElementById('contents').style.visibility="hidden";
+              } else if (state == 'complete') {
+                  setTimeout(function(){
+                     document.getElementById('interactive');
+                     document.getElementById('load').style.visibility="hidden";
+                     document.getElementById('pageContent').style.visibility="visible";
+                  },1000);
+              }
+            }
+          </script>
   </body>
 </html>

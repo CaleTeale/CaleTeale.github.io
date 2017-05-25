@@ -8,7 +8,7 @@ html
 
 body
 {
-  font-family: 'Khula', sans-serif;
+  font-family: 'Lora', serif;
   margin: 0;
   padding: 0;
   opacity: 1;
@@ -19,6 +19,11 @@ body
 body.fade-out {
     opacity: 0;
     transition: none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-family: 'Work Sans', sans-serif;
 }
 
 #top
@@ -146,7 +151,7 @@ nav ul li {
   z-index: 97;
   width: 90%;
   font-size: 1.3vw;
-  letter-spacing: -3px;
+  letter-spacing: -0.13vw;
   text-align: right;
   justify-content: flex-end;
 }
@@ -160,6 +165,7 @@ nav ul li {
   margin-top: 7%;
   font-size: 0.85vw;
   text-align: justify;
+  line-height: 1.3vw;
 }
 
 .divider
@@ -199,7 +205,7 @@ nav ul li {
   background-color: #afafaf;
   width: 100%;
   height: 30%;
-  margin-top: 295%;
+  margin-top: 17%;
 }
 
 .sec2Title
@@ -210,7 +216,7 @@ nav ul li {
   margin-left: 58%;
   color: white;
   font-size: 2vw;
-  letter-spacing: -3px;
+  letter-spacing: -0.13vw;
 }
 
 #returner
@@ -234,7 +240,7 @@ nav ul li {
 {
   position: absolute;
   margin-left: 60px;
-  margin-top: -45px;
+  margin-top: -40px;
   width: 100px;
   color: #ffffff;
   padding: 3px 3px 3px 3px;
@@ -252,6 +258,7 @@ nav ul li {
   color: #efefef;
   font-size: 0.8vw;
   text-align: justify;
+  line-height: 1.3vw;
 }
 
 .bgIMG2
@@ -274,7 +281,7 @@ nav ul li {
   position: absolute;
   z-index: 97;
   margin-left: 62%;
-  margin-top: 97%;
+  margin-top: 95%;
   margin-bottom: 5%;
   width: 30%;
   height: 70%;
@@ -393,7 +400,7 @@ video
   vertical-align: middle;
   color: white;
   font-size: 2.3vw;
-  letter-spacing: -3px;
+  letter-spacing: -0.13vw;
 }
 
 .sec3Title h1
@@ -493,6 +500,8 @@ video
   text-align: justify;
   font-size: 0.85vw;
   color: #373d3f;
+  line-height: 1.3vw;
+
 }
 
 
@@ -539,6 +548,8 @@ video
   color: white;
   text-align: center;
   font-size: 0.85vw;
+  line-height: 1.3vw;
+
 }
 
 .grid
@@ -593,7 +604,7 @@ video
 {
   position: absolute;
   z-index: 98;
-  margin-top: 305%;
+  margin-top: 25%;
   width: 100%;
   height: 100%;
   background-color: #efefef
@@ -601,9 +612,10 @@ video
 
 .section5TitleContainer
 {
+  margin-top: 7%;
   display: flex;
   position: absolute;
-  z-index: 98;
+  z-index: 99;
   width: 100%;
 }
 
@@ -611,9 +623,9 @@ video
 {
   display: flex;
   position: absolute;
-  z-index: 98;
+  z-index: 99;
   width: 100%;
   font-size: 2vw;
-  letter-spacing: -3px;
+  letter-spacing: -0.13vw;
   justify-content: center;
 }
