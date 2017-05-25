@@ -225,7 +225,7 @@ nav ul li {
   height: 50px;
   position: fixed;
   z-index: 150 !important;
-  margin-top: 33%;
+  margin-top: -7%;
   margin-left: 3%;
   display: none;
 }
