@@ -606,7 +606,7 @@ video
   z-index: 98;
   margin-top: 305%;
   width: 100%;
-  height: 230%;
+  height: 150%;
   background-color: #efefef;
 }
 
@@ -632,12 +632,12 @@ video
 
 .timelineContainer
 {
-  top: 12%;
+  top: 17%;
   position: absolute;
   z-index: 100;
   display: flex;
   width: 90%;
-  height: 80%;
+  height: 90%;
   margin-left: 5%;
   margin-right: 5%;
   align-items: center;
@@ -650,7 +650,7 @@ video
   background-color: #FFF3B2;
   color: #093145;
   height: 20%;
-  width: 60%;
+  width: 65%;
   margin: 20px;
   flex-direction: column;
   align-items: center;
@@ -662,7 +662,7 @@ video
   background-color: #c6f1ff;
   color: #093145;
   height: 20%;
-  width: 60%;
+  width: 65%;
   margin: 20px;
   flex-direction: column;
   align-items: center;
@@ -674,7 +674,7 @@ video
   background-color: #ff9b9b;
   color: #093145;
   height: 20%;
-  width: 60%;
+  width: 65%;
   margin: 20px;
   flex-direction: column;
   align-items: center;
@@ -683,7 +683,7 @@ video
 .timelineItemTitle
 {
   display: flex;
-  margin-top: 3%;
+  margin-top: 1%;
   height: 25%;
   width: 100%;
   justify-content: flex-start;
@@ -729,10 +729,53 @@ video
 
 .timelineParaContainer
 {
-  margin-top: 1%;
   height: 45%;
   width: 90%;
   margin-left: -6%;
   display: flex;
   font-size: 0.73vw;
+}
+
+.underline
+{
+  text-decoration: underline;
+}
+
+.noDotPoints
+{
+    list-style: none;
+    padding: 0;
+    display: inline;
+}
+
+.noDotPoints li
+{
+    list-style: none;
+    margin: 7px;
+    font-size: 0.7vw;
+}
+
+.listLeft
+{
+  left: 0;
+  height: 100%;
+  width: 30%;
+  border-right: 1px solid black;
+}
+
+.listCenter
+{
+  height: 100%;
+  width: 40%;
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.listRight
+{
+  height: 100%;
+  width: 30%;
+  text-align: right;
+  border-left: 1px solid black;
 }
