@@ -160,8 +160,8 @@ nav ul li {
 {
   position: absolute;
   z-index: 97;
-  width: 20%;
-  margin-left: 70%;
+  width: 21%;
+  margin-left: 69%;
   margin-top: 7%;
   font-size: 0.85vw;
   text-align: justify;
@@ -280,11 +280,11 @@ nav ul li {
 {
   position: absolute;
   z-index: 97;
-  margin-left: 62%;
-  margin-top: 95%;
+  margin-left: 55%;
+  margin-top: 90%;
   margin-bottom: 5%;
-  width: 30%;
-  height: 70%;
+  width: 40%;
+  height: 80%;
   justify-content: center;
 }
 
@@ -303,7 +303,7 @@ nav ul li {
 {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 57%;
   width: auto;
   margin-top: -35%;
   padding: 16px;
